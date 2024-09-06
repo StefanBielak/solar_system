@@ -1,0 +1,122 @@
+@import '../../styles/variables';
+.navigation{
+    background-color: $background_color;
+    background-image: url('../../assets/background-stars.svg');
+    margin-top: -33px;
+    padding: 16px 24px 0px 24px;
+    &_header{
+        display: flex;
+        justify-content: space-between;
+    &_icon{
+        cursor:pointer;
+    }
+}
+}
+.list{
+     display: none;
+       &_open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 100px;
+        left: 0px;
+        padding-left: 24px;
+        background-color: $background_color;
+        background-image: url('../../assets/background-stars.svg');
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+    }
+    &_closed {
+        display: none;
+    }
+    &_element{
+        text-decoration: none;
+        color: $base_color;
+        display: flex;
+        gap: 35px;
+        border-bottom: solid 1px;
+        border-color: rgba($hover_color, 0.5);
+        cursor: pointer;
+        &:nth-child(1):hover{
+            background-image: url('../../assets/gallery/home_page_mobile.jpg');
+            background-position: left;
+            border-bottom: none;
+            color: $background_color;
+        }
+        &:nth-child(2):hover{
+            background-color: $mercury_color;
+              border-bottom: none;
+              color: $background_color;
+        }
+        &:nth-child(3):hover{
+            background-color: $venus_color;
+              border-bottom: none;
+              color: $background_color;
+        }
+        &:nth-child(4):hover{
+            background-color: $earth_color;
+              border-bottom: none;
+              color: $background_color;
+        }
+        &:nth-child(5):hover{
+            background-color: $mars_color;
+              border-bottom: none;
+              color: $background_color;
+        }
+        &:nth-child(6):hover{
+            background-color: $jupiter_color;
+              border-bottom: none;
+              color: $background_color;
+        }
+        &:nth-child(7):hover{
+            background-color: $saturn_color;
+              border-bottom: none;
+              color: $background_color;
+        }
+        &:nth-child(8):hover{
+            background-color: $uranus_color;
+              border-bottom: none;
+              color: $background_color;
+        }
+        &:nth-child(9):hover{
+            background-color: $neptune_color;
+              border-bottom: none;
+              color: $background_color;
+        }
+        &_text{
+            font-family: "League Spartan";
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 25px;
+            letter-spacing: 5.5px;
+            text-transform: uppercase;
+            width: 170px;
+            padding: 5px 10px 5px 10px;
+        }
+        &_icon{
+        width: 30px;
+        padding-right: 25px;
+             .list_element:hover & {
+                background-color: $background_color;
+            }
+        &_arrow{
+            width: 15px; 
+            transition: transform 0.3s ease;
+              .list_element:hover & {
+                filter: invert(100%) brightness(0);
+                transform: translateX(100px);
+               width: 30px;
+            }
+    }
+        }
+    }
+}
+
+.body_hidden {
+    overflow: hidden;
+    .main-content {
+        display: none;
+    }
+}
+
