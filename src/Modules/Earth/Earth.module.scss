@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.nav_mobile{
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: rgba($hover_color, 1);
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: center;
+    gap:50px;
+    margin-bottom: 95px;
+    &_button{
+        background: none;
+        border: none;
+        color: $text_color;
+        padding-top: 17px;
+        padding-bottom: 20px;
+        font-family: "League Spartan";
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1.93px;
+        cursor: pointer;
+        &:hover{
+            color: $base_color;
+        }
+    }
+}
+
+.nav_mobile_button.active {
+      border-bottom: 4px solid $earth_color;
+    }

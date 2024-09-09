@@ -1,0 +1,81 @@
+@import './variables';
+
+.planet{
+     background-color: $background_color;
+    background-image: url('../assets/background-stars.svg');
+    text-align: center; 
+    height: 100%;
+    &_box{
+        &_icon{
+            max-width: 220px;
+        }
+        &_title{
+            text-transform: uppercase;
+        }
+        &_text{
+            line-height: 22px;
+            font-weight:300;
+            word-spacing: 4px;
+            max-width: 510px;
+            margin: auto;
+        }
+    }
+}
+.surface_icon{
+    max-width: 500px;
+    margin-top: -120px;
+    margin-bottom: -50px;
+}
+.source{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    padding-top: 32px;
+    padding-bottom: 28px;
+    &_title{
+        font-weight: 300;
+        color:$text_color;
+        font-size: 20px;
+    }
+    &_click{
+        display: flex;
+        gap:10px;
+        cursor: pointer;
+        align-items: center;
+    }
+    &_wiki{
+        font-family: "League Spartan";
+        color: $text_color;
+        text-decoration: underline;
+        font-size: 20px;
+    }
+    &_icon{
+        width: 20px;
+    }
+}
+.nav{
+    display: none;
+}
+.container{
+    max-width: 500px;
+    margin: auto;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px;
+    border-color: rgba($hover_color, 0.8);
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-bottom: 20px;
+    &:nth-child(4){
+        margin-bottom: 80px;
+    }
+    &_text{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $text_color;
+        letter-spacing: 1px;
+    }
+}
